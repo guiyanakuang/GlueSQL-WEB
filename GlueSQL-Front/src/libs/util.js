@@ -8,8 +8,8 @@ let util = {
 const ajaxUrl = env === 'development' ?
     'http://127.0.0.1:8888' :
     env === 'production' ?
-    'https://www.url.com' :
-    'https://debug.url.com';
+    'http://gluesql.local.com' :
+    'http://gluesql.local.com';
 
 util.ajax = axios.create({
     baseURL: ajaxUrl,
